@@ -10,30 +10,66 @@ If you haven't register yet so register now: https://hacktoberfest.com/
 
 ### How to Contribute to "Flashcard App"
 
-1. Fork the repository (Click the Fork button in the top right of this page, click your Profile Image)
-2. Clone the forked repository to your local machine.
-```markdown
-git clone https://github.com/your-username/flashcard-react.git
+**1.**  Fork [this](https://github.com/rezwan2525/flashcard-react) repository.
+
+**2.**  Clone your forked copy of the project.
+
+```bash
+   git clone https://github.com/rezwan2525/flashcard-react.git
 ```
-3. change the present working directory
-```markdown
-cd flashcard-react
+
+**3.** Navigate to the project directory.
 ```
-4. Add/Create your project to the specific folder as described in what you can contribute section.
-5. Make a new branch
-```markdown
-git checkout -b <branch-name>
+   cd flashcard-react
 ```
-6. Make change in the repository with the new branch.
-7. Push the changes.
-```markdown
-8. git add .
+
+**4.** Create a new branch:
 ```
+   git checkout -b <branch-name>
 ```
-10. git commit -m "<Your commit Message>"
+
+**5.** Make changes in source code.
+
+**6.** Stage your changes and commit
+
 ```
+   git add .
+   git commit -m "<your_commit_message>"
 ```
-11. git push origin <branch-name>
+
+**7.** Push your local commits to the remote repo.
+
+```
+   git push origin <branch-name>
+```
+
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+
+**9.** If anyone contribute to this repository, then the changes will not reflect in your local repository. For that:
+
+**10.** Setup a reference(remote) to the original repository to get all the changes from the remote.
+```
+   git remote add upstream  https://github.com/rezwan2525/flashcard-react
+```
+
+**11.** Check the remotes for this repository.
+```
+   git remote -v
+```
+
+**12.** Fetching from the remote repository will bring in its branches and their respective commits.
+```
+   git fetch upstream
+```
+
+**13.** Make sure that you're on your master branch.
+```
+   git checkout main
+```
+
+**14.** Now that we have fetched the upstream repository, we want to merge its changes into our local branch. This will bring that branch into sync with the upstream, without losing our local changes.
+```
+   git merge upstream/main
 ```
 
 * Make a pull request.
