@@ -4,7 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export default function Toolbar(props) {
     return (
-        <Navbar bg="light">
+        <Navbar bg="white"
+            className='navbar'>
             <Container>
                 <Navbar.Brand href="#home">
                     <img

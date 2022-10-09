@@ -19,6 +19,8 @@
   transition: 1500ms;
   cursor: pointer;
   transform: perspective(5000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  border-radius: 15px;
+
 }
 
 .card:hover {
@@ -75,6 +77,8 @@
 
 .prev-next-btns {
   color: white;
+  background-color: green;
+
 }
 
 .next {
@@ -87,8 +91,9 @@
 
 }
 
-.prev {
-  background-color: green;
+.navbar {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .prev:hover {
