@@ -43,7 +43,7 @@ If you haven't register yet so register now: https://hacktoberfest.com/
    git push origin <branch-name>
 ```
 
-**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) with issue number (ex: issue #4 )
 
 **9.** If anyone contribute to this repository, then the changes will not reflect in your local repository. For that:
 
@@ -71,9 +71,9 @@ If you haven't register yet so register now: https://hacktoberfest.com/
 ```
    git merge upstream/main
 ```
+**15.** Make a pull request.<br>
+**16.** Please star the repository.
 
-* Make a pull request.
-* Star the repository.
 
 ### NOTE
 
