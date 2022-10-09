@@ -7,7 +7,7 @@ const INITIAL_FLASHCARDS = [
     { id: 4, front: "Composition vs Inheritance", back: "React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components." },
 ];
 
-const FLASHCARDS_KEY = 'flashcards'
+const FLASHCARDS_KEY = 'flashcards';
 
 function getStorageFlashcards() {
     const cards = localStorage.getItem(FLASHCARDS_KEY);
