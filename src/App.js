@@ -38,8 +38,8 @@ function App() {
       <Toolbar></Toolbar>
       <Card {...allCards.find(item=> item.id === curCardId)}></Card>
       <div className="action-buttons">
-        <Button variant="warning" className="me-4" onClick={goToPrev}>Prev</Button>
-        <Button variant="success" className="ms-4" onClick={goToNext}>Next</Button>
+        <Button variant="warning" className="me-4 prev-next-btns" onClick={goToPrev}>Prev</Button>
+        <Button variant="success" className="ms-4 prev-next-btns" onClick={goToNext}>Next</Button>
       </div>
     </Container>
   );
