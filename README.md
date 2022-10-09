@@ -48,7 +48,7 @@ You can create a <a href="https://github.com/rezwan2525/flashcard-react/issues">
 <p align="center">
   
 	
-<a href="https://github.com/rezwan2525/flashcard-react/graphs/contributors">
+<a href="https://github.com/rezwan2525/flashcard-react/graphs/contributors"> 
   <img src="https://contrib.rocks/image?repo=rezwan2525/flashcard-react" />
 </a>
 </p>
