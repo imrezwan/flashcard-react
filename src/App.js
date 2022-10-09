@@ -12,7 +12,7 @@ function App() {
   const [curCardId, setCurCardId] = useState(1);
 
   let goToPrev = () => {
-    if ( isValidId(curCardId - 1)) {
+    if (isValidId(curCardId - 1)) {
       setCurCardId(curCardId - 1);
     }
     else {
@@ -21,7 +21,7 @@ function App() {
   }
 
   let goToNext = () => {
-    if ( isValidId(curCardId + 1)) {
+    if (isValidId(curCardId + 1)) {
       setCurCardId(curCardId + 1);
     }
     else {
@@ -30,16 +30,16 @@ function App() {
   };
 
   function isValidId(id) {
-    return ( id <= totalCards && id >= 1);
+    return (id <= totalCards && id >= 1);
   }
 
   return (
     <Container className="container-main">
       <Toolbar></Toolbar>
-      <Card {...allCards.find(item=> item.id === curCardId)}></Card>
+      <Card {...allCards.find(item => item.id === curCardId)}></Card>
       <div className="action-buttons">
-        <Button variant="warning" className="me-4 prev-next-btns" onClick={goToPrev}>Prev</Button>
-        <Button variant="success" className="ms-4 prev-next-btns" onClick={goToNext}>Next</Button>
+        <Button variant="warning" className="me-4 next prev-next-btns" onClick={goToPrev}>Prev</Button>
+        <Button variant="success" className="ms-4 prev prev-next-btns" onClick={goToNext}>Next</Button>
       </div>
     </Container>
   );
