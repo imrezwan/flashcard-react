@@ -34,14 +34,16 @@ function App() {
   }
 
   return (
+    <>
+    <Toolbar></Toolbar>
     <Container className="container-main">
-      <Toolbar></Toolbar>
       <Card {...allCards.find(item=> item.id === curCardId)}></Card>
       <div className="action-buttons">
         <Button variant="warning" className="me-4 prev-next-btns" onClick={goToPrev}>Prev</Button>
         <Button variant="success" className="ms-4 prev-next-btns" onClick={goToNext}>Next</Button>
       </div>
     </Container>
+    </>
   );
 }
 
