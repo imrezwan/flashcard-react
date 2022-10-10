@@ -4,7 +4,6 @@ import Card from './components/Card';
 import Toolbar from './components/Toolbar';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import DataSource from './datasource';
 import {BsFillMoonFill, BsFillSunFill} from 'react-icons/bs'
 import { useFlashcards } from './hooks/useFlashcards';
 
