@@ -4,10 +4,10 @@ import Card from './components/Card';
 import Toolbar from './components/Toolbar';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import DataSource from './datasource';
+import { useFlashcards } from './hooks/useFlashcards';
 
 function App() {
-  const allCards = DataSource.getAllFlashcards();
+  const [allCards] = useFlashcards();
   const totalCards = allCards.length;
   const [curCardId, setCurCardId] = useState(1);
 
