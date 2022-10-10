@@ -53,7 +53,6 @@ function App() {
   }
 
   return (
-    <>
     <div style={{  
       backgroundColor: mode === 'light' ? "rgb(204, 248, 204)" : "rgb(0, 0, 0)",
       backgroundSize: 'cover',
@@ -69,8 +68,8 @@ function App() {
         <div class='ball'></div>
       </label>
     </div>
-    <Toolbar></Toolbar>
     <Container className="container-main">
+      <Toolbar></Toolbar>
       <Card {...allCards.find(item=> item.id === curCardId)}></Card>
       <div className="action-buttons">
         <Button variant="warning" className="me-4 prev-next-btns" onClick={goToPrev}>Prev</Button>
@@ -78,7 +77,6 @@ function App() {
       </div>
     </Container>
     </div>
-    </>
   );
 }
 
