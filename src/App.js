@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import DataSource from './datasource';
 import {BsFillMoonFill, BsFillSunFill} from 'react-icons/bs'
+import { useFlashcards } from './hooks/useFlashcards';
 
 function getWindowDimensions() {
   const { innerHeight: height } = window;
@@ -15,7 +16,7 @@ function getWindowDimensions() {
 }
 
 function App() {
-  const allCards = DataSource.getAllFlashcards();
+  const [allCards] = useFlashcards();
   const totalCards = allCards.length;
   const [curCardId, setCurCardId] = useState(1);
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
@@ -53,6 +54,7 @@ function App() {
   }
 
   return (
+    <>
     <div style={{  
       backgroundColor: mode === 'light' ? "rgb(204, 248, 204)" : "rgb(0, 0, 0)",
       backgroundSize: 'cover',
@@ -68,8 +70,8 @@ function App() {
         <div class='ball'></div>
       </label>
     </div>
+    <Toolbar></Toolbar>
     <Container className="container-main">
-      <Toolbar></Toolbar>
       <Card {...allCards.find(item=> item.id === curCardId)}></Card>
       <div className="action-buttons">
         <Button variant="warning" className="me-4 prev-next-btns" onClick={goToPrev}>Prev</Button>
@@ -77,6 +79,7 @@ function App() {
       </div>
     </Container>
     </div>
+    </>
   );
 }
 
