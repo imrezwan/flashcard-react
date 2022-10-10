@@ -7,6 +7,8 @@ const INITIAL_FLASHCARDS = [
     { id: 4, front: "Composition vs Inheritance", back: "React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components." },
     { id: 5, front: "Uses", back: " It's used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript." },
     { id: 6, front: "Type", back: "ReactJS is an open-source, component-based front-end library responsible only for the view layer of the application." },
+    { id: 7, front: "Aim", back: "Its aim is to allow developers to easily create fast user interfaces for websites and applications alike." },
+    { id: 8, front: "Versus", back: "React is better than Angular due to it's virtual DOM implementation and rendering optimizations." },
 ];
 
 const FLASHCARDS_KEY = 'flashcards';
