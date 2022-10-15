@@ -9,6 +9,7 @@ const INITIAL_FLASHCARDS = [
     { id: 6, front: "Declarative Syntax", back: "React uses Declarative Syntax which means that if we want something we just write it down instead of creting it from scratch. Eg: If we want a checkbox we might use something like <Checkbox />" },
     { id: 7, front: "Library not a Framework", back: "React JS is a library and not a framework. This means that we can import React.js in any of our html css js project." },
     { id: 8, front: "Everything is a Component", back: "When using React everything is a component. That button, This page, That Navbar everything." },
+    { id: 9, front: "React Hooks", back: "React hooks are the functions which allows to use state, lifecycle methods and other react features. Hooks are not used inside class based component. Example: useState, useEffect, useMemo, useContext etc." },
 ];
 
 const FLASHCARDS_KEY = 'flashcards';
