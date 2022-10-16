@@ -9,6 +9,10 @@ const INITIAL_FLASHCARDS = [
     { id: 6, front: "Declarative Syntax", back: "React uses Declarative Syntax which means that if we want something we just write it down instead of creting it from scratch. Eg: If we want a checkbox we might use something like <Checkbox />" },
     { id: 7, front: "Library not a Framework", back: "React JS is a library and not a framework. This means that we can import React.js in any of our html css js project." },
     { id: 8, front: "Everything is a Component", back: "When using React everything is a component. That button, This page, That Navbar everything." },
+    { id: 9, front: "React Hooks", back: "React hooks are the functions which allows to use state, lifecycle methods and other react features. Hooks are not used inside class based component. Example: useState, useEffect, useMemo, useContext etc." },
+    { id: 10, front: "React Lifecycle Methods", back: "React Component has a lifecycle, which can be monitored and manipulated during its phases. The phases of lifecycle in React Component are: Mounting, Updating & Unmounting." },
+    { id: 11, front: "Higher Order Components (HOC)", back: "Higher order components is a advance technique in react. It is a function that takes a component and returns a new component. Example: withAuth(ProfilePage). Here withAuth is a HOC and ProfilePage is a component." },
+    { id: 12, front: "Memoization in React", back: "Memoization is a optimizaion technique in react. It helps to improve performance of application by preventing unnecessary re-renders and caching. React has in-build hooks useMemo() in order to implement memoization." },
 ];
 
 const FLASHCARDS_KEY = 'flashcards';
